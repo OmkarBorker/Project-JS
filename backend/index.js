@@ -2,11 +2,12 @@
 import "./config/database.js";
 import app from "./config/app.js";
 import "dotenv/config";
+import morgan from "morgan";
 
 import { getBucketList, addNewBucket, addNewCard, updateBucketName, getCardList, deleteCard, updateCard, saveHistory, getHistoryList } from './routes/index.js'
 
 const PORT = process.env.PORT || 9002;
-
+app.use(morgan('tiny'));
 app.get("/", (req, res) => {
     res.send("Running Backend");
 });
