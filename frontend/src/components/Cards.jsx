@@ -5,7 +5,6 @@ import EditIcon from '@mui/icons-material/Edit';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteCard, updateCard } from '../redux/actions/CardAction';
 import { saveHistory } from '../redux/actions/HistoryAction'
-import "./cards.css"
 
 const style = {
     position: 'absolute',
@@ -99,7 +98,7 @@ const Cards = ({ card }) => {
 
     return (
         <>
-            <Card className='Cardbox' sx={{ maxWidth: 345, minWidth: 500 }}>
+            <Card className='Cardbox' sx={{ maxWidth: 345, minWidth: 345 }}>
                 <CardMedia>
                     {
                         card.linkType === "mp4" ?
@@ -107,7 +106,7 @@ const Cards = ({ card }) => {
                                 ref={videoRef}
                                 controls
                                 muted
-                                width="500px"
+                                width="345px"
                                 onClick={playVideo}
                             >
                                 <source
@@ -116,7 +115,7 @@ const Cards = ({ card }) => {
                                 />
                             </video>
                             :
-                            <Box className='Audiobox' sx={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", mt: 2 }}>
+                            <Box sx={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", mt: 2 }}>
                                 <audio ref={audioRef} onPlay={playAudio} controls>
                                     <source src={card.link} />
                                 </audio>

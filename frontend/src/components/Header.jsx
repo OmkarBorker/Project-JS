@@ -18,14 +18,14 @@ import "./Header.css"
 const style = {
     position: 'absolute',
     top: '50%',
-    left: '20%',
+    left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 400,
     bgcolor: 'background.paper',
     border: 'none',
     borderRadius: "6px",
     boxShadow: 24,
-    p:0,
+    p:4,
 };
 
 export default function Header() {
