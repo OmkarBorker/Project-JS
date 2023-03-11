@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-mongoose.connect(`mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@cluster0.nalllch.mongodb.net/?retryWrites=true&w=majority`, {
+mongoose.connect(`mongodb+srv://OmkarBorker:E0esto93CFkamRzA@cluster0.nhfxh7n.mongodb.net/?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
