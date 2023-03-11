@@ -12,3 +12,24 @@
 ### Deployement at
 
  https://project-js-gamma.vercel.app/
+ 
+### local system run
+    Backend:
+    
+    1: cd backend
+    
+    2: npm i
+    
+    3: npm start
+    
+    Frontend
+    
+    1: cd frontend
+    
+    2: npm i 
+    
+    3: npm run dev
+    
+vite.config
+backend runs on- localhost.9062
+frontend runs on- http://127.0.0.1:5173/
