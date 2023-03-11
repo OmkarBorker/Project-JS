@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-
+mongoose.set('strictQuery', true);
 mongoose.connect(`mongodb+srv://OmkarBorker:E0esto93CFkamRzA@cluster0.nhfxh7n.mongodb.net/?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true

@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import { Alert, Button, IconButton, ListItemIcon, ListItemText, Menu, MenuItem, Modal, TextField, Tooltip } from '@mui/material';
 import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
 import HistoryRoundedIcon from '@mui/icons-material/HistoryRounded';
+import '/image/image.jpg';
 
 import { addNewBucket } from '../redux/actions/BucketListAction.jsx';
 import { addNewCard } from '../redux/actions/CardAction.jsx';
@@ -18,7 +19,8 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 400,
-    bgcolor: 'background.paper',
+    // bgcolor: 'background.paper',
+    backgroundImage:'image.jpg',
     border: 'none',
     borderRadius: "6px",
     boxShadow: 24,

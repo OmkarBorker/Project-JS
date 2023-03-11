@@ -27,8 +27,8 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={
-            <Box sx={{ marginTop: "64px" }}>
+          <Route path="/" element={ 
+            <Box sx={{ marginTop: "64px" ,backgroundImage:'image.jpg', }}>
               {
                 BucketList?.BucketList?.map((list, index) => {
                   return <Buckets key={index} list={list} />
