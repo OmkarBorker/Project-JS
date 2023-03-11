@@ -8,7 +8,7 @@ import { getBucketList, addNewBucket, addNewCard, updateBucketName, getCardList,
 const PORT = process.env.PORT || 9002;
 
 app.get("/", (req, res) => {
-    res.send("hello from heroku");
+    res.send("Running Backend");
 });
 
 
