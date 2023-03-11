@@ -25,6 +25,7 @@ function App() {
   return (
     <>
       <Router>
+      <Box class = "Titlebox" sx ={{textAlign:"center"}}>Welcome To Your Page</Box>
         <Header />
         <Routes>
           <Route path="/" element={ 

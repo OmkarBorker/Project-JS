@@ -8,6 +8,7 @@ import { getCardList } from '../redux/actions/CardAction';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import { base_url } from "../apis/config";
+import "./Bucket.css"
 
 const style = {
     position: 'absolute',
@@ -19,7 +20,7 @@ const style = {
     border: 'none',
     borderRadius: "6px",
     boxShadow: 24,
-    p: 4,
+    p: 0,
 };
 
 const Buckets = ({ list }) => {
@@ -66,9 +67,9 @@ const Buckets = ({ list }) => {
 
     return (
         <>
-            <Container maxWidth="xl">
-                <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "16px" }}>
-                    <Typography variant="h6" sx={{ display: "inline-block" }}>
+            <Container maxWidth="xl" style={{paddingTop:"10px"}}>
+                <Box class="bucketbox" sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "16px" , }}>
+                    <Typography variant="h6" sx={{ display: "inline-block",paddingLeft:"10px",fontSize:"180%"}}>
                         {list.bucketName}
                     </Typography>
                     <Tooltip title="Edit bucket name">

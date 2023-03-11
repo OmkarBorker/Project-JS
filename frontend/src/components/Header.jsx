@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { Alert, Button, IconButton, ListItemIcon, ListItemText, Menu, MenuItem, Modal, TextField, Tooltip } from '@mui/material';
+import { Alert, Button, Icon, IconButton, ListItemIcon, ListItemText, Menu, MenuItem, Modal, TextField, Tooltip } from '@mui/material';
 import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
 import HistoryRoundedIcon from '@mui/icons-material/HistoryRounded';
 import '/image/image.jpg';
@@ -12,19 +12,20 @@ import { addNewBucket } from '../redux/actions/BucketListAction.jsx';
 import { addNewCard } from '../redux/actions/CardAction.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import "./Bucket.css"
+import "./Header.css"
 
 const style = {
     position: 'absolute',
     top: '50%',
-    left: '50%',
+    left: '20%',
     transform: 'translate(-50%, -50%)',
     width: 400,
-    // bgcolor: 'background.paper',
-    backgroundImage:'image.jpg',
+    bgcolor: 'background.paper',
     border: 'none',
     borderRadius: "6px",
     boxShadow: 24,
-    p: 4,
+    p:0,
 };
 
 export default function Header() {
@@ -93,14 +94,17 @@ export default function Header() {
 
     return (
         <>
-            <Box sx={{ flexGrow: 1 }}>
+            <Box className='Headerbox' sx={{ flexGrow: 1 }}>
                 <AppBar position="fixed">
                     <Toolbar>
+                        <Icon style={{width:"40px"}} >
+                            <img style = {{height:"25px",width:"40px"}} src = "./../image/Myproject.png"/>
+                        </Icon>
                         <Typography
                             variant="h6"
                             noWrap
                             component="div"
-                            sx={{ flexGrow: 1 }}
+                            sx={{ flexGrow: 1 ,fontSize:"200%"}}
                         >
                             <Link to="/" style={{ color: "#FFF" }}>
                                 CONVIN
@@ -273,6 +277,7 @@ export default function Header() {
                     </Box>
                 </Box>
             </Modal>
+        
         </>
     );
 }

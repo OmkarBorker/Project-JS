@@ -1,0 +1,6 @@
+.bucketbox{
+    text-decoration: dotted;
+    width:auto;
+    background:linear-gradient(rgba(116, 155, 247, 0.975),transparent);
+    background-color:rgb(74, 103, 253) /*this your primary color*/
+  }

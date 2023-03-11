@@ -1,0 +1,12 @@
+.Cardbox{
+    width:auto;
+    background:linear-gradient(rgba(144, 251, 194, 0.975),transparent);
+    background-color:rgb(124, 212, 250) /*this your primary color*/
+  }
+
+  .Audiobox{
+    width:auto;
+    height: 90px;
+    background:linear-gradient(rgba(143, 249, 201, 0.975),transparent);
+    background-color:rgb(126, 225, 253) /*this your primary color*/
+  }
